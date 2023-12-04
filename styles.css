@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* VARIANTES DE CORES */
+    --azul-principal: #167BF7;
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --cor-de-fundo: #00030C;
+
+    /* VARIANTES DE FONTES */
+    --fonte-principal: 'Inter', sans-serif;
+    --tamanho-título: 3rem;
+    --tamanho-médio: 1.75rem;
+    --tamanho-pequeno: 1rem;
+    --tamanho-miúdo: 0.75rem;
+    --tamanho-item-lista: 2rem;
+    --tamanho-rodape-texto: 0.875rem;
+
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+}
+
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+.container-botao {
+    background-color: var(--azul-principal);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+    color: var(--branco-principal);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.botao-secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container-aviso {
+    font-size: var(--tamanho-miúdo);
+    text-align: center;
+    color: var(--cinza-secundario);
+}
+
+.container-titulo {
+    font-size: var(--tamanho-médio);
+    font-weight: 700;
+}
+
+.container-imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container-conteudo {
+    margin: 0 6em;
+}
+
+.secundario-imagem {
+    width: 85%;
+    height: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao-titulo {
+    font-weight: 700;
+    font-size: var(--tamanho-título);
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao-texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario-botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container-descricao {
+    padding: 2em;
+}
+
+.telas-imagem {
+    margin-left: 7em;
+    width: 90%;
+}
+
+.notebook-imagem {
+    width: 90%;
+}
+
+.dispositivos {
+    text-align: center;
+
+}
+
+.dispositivos-lista {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 2.5em 22em;
+}
+
+.dispositivos-titulo {
+    font-size: var(--tamanho-título);
+    color: var(--branco-principal);
+}
+
+.lista-item {
+    font-size: var(--tamanho-item-lista);
+    color: var(--branco-principal);
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rodape-lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none; 
+}
+
+.lista-link {
+    padding: 2em;
+}
+
+.lista-link a {
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+.lista-link a:hover {
+    color: var(--azul-principal);
+}
+
+.rodape-texto {
+    font-size: var(--tamanho-rodape-texto);
+    margin: 1.25em 0 2em 0;
+}
+
+.rodape-imagem {
+    margin: 3em 0 1.5em 0;
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        display: block;
+    }
+
+    .principal {
+        background-image: none;
+        text-align: center;
+        margin-bottom: -4.5em;
+        margin-top: 6em;
+    }
+
+    .container-imagem {
+        width: 50vw;
+    }
+
+    .container-conteudo {
+        margin: 2em 2em;
+    }
+
+    .secundario {
+        margin: 0;
+        text-align: center;
+    }
+
+    .secundario-imagem {
+        width: 75vw;
+        height: 52.5vh;
+        margin-left: 3.5em;
+    }
+
+    .telas-imagem {
+        margin: 0;
+        width: 70vw;
+    }
+
+    .dispositivos-lista {
+        display: block;
+        margin:0;
+        margin-top: 2em;
+    }
+
+    .rodape-lista {
+        display: block;
+    }
+
+    .rodape-texto {
+        display: block;
+        text-align: center;
+        font-size: var(--tamanho-miúdo);
+    }
+
+}
